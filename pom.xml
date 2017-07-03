@@ -11,6 +11,7 @@
     <description>Simulates present-delivering robots</description>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
             <plugin>

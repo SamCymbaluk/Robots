@@ -29,6 +29,7 @@ public class Main {
         }
 
         sim = new RobotSimulation(robots, moves);
+        System.out.println("Simulation constructed with " + robots + " robot" + (robots == 1 ? "." : "s."));
         commandListener();
     }
 
@@ -74,6 +75,10 @@ public class Main {
                              threshold,
                              threshold == 1 ? "" : "s");
                      return true;
+                 case "q":
+                 case "quit":
+                 case "exit":
+                     System.exit(0);
             }
         } catch (IndexOutOfBoundsException | NumberFormatException ex) {
             return false;
