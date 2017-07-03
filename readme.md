@@ -1,19 +1,22 @@
-#Robots
+# Robots
 
 Simulates present-delivering robots. Created as a solution to a Weever Apps take home exercise
 View the specifications [here](https://weeverapps.github.io/interviews/robot.html) .
 
-##Setup
+## Setup
 Clone this repo
 `git clone https://github.com/SamCymbaluk/Robots`
+
 Install using Maven
 `mvn clean install`
+
 Execute the compiled jar the simulation parameters
 `java -jar target/Robots.jar -m "<moveSequence>" -r (numberOfRobots)`
+
 Example:
 `java -jar target/Robots.jar -m "^^<^V><" -r 5`
 
-##Usage
+## Usage
 Once the program has been setup, there are a number of commands you can run:
 
 * Simulate the entire move sequence
